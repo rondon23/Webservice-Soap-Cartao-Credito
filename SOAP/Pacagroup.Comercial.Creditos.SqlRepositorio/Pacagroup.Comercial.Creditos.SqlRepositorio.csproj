@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5B557827-6ACB-4987-B049-789774A8360E}</ProjectGuid>
+    <ProjectGuid>{6891DB62-CA31-4B31-ABD3-D74EC27FBB8C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pacagroup.Comercial.Creditos.Implementacion</RootNamespace>
-    <AssemblyName>Pacagroup.Comercial.Creditos.Implementacion</AssemblyName>
+    <RootNamespace>Pacagroup.Comercial.Creditos.SqlRepositorio</RootNamespace>
+    <AssemblyName>Pacagroup.Comercial.Creditos.SqlRepositorio</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,7 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,22 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClienteService.cs" />
+    <Compile Include="ClienteRepositorio.cs" />
+    <Compile Include="ConexionRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Pacagroup.Comercial.Creditos.Contrato\Pacagroup.Comercial.Creditos.Contrato.csproj">
-      <Project>{55b7b7a0-dca5-40a3-8a4a-79908b321a1f}</Project>
-      <Name>Pacagroup.Comercial.Creditos.Contrato</Name>
+    <ProjectReference Include="..\Pacagroup.Comercial.Creditos.ContratoRepositorio\Pacagroup.Comercial.Creditos.ContratoRepositorio.csproj">
+      <Project>{e3fd4fe2-c483-429e-adcf-21a1a0f91ed1}</Project>
+      <Name>Pacagroup.Comercial.Creditos.ContratoRepositorio</Name>
     </ProjectReference>
     <ProjectReference Include="..\Pacagroup.Comercial.Creditos.Dominio\Pacagroup.Comercial.Creditos.Dominio.csproj">
-      <Project>{14134F22-46F1-4076-A1B0-AE84F7618C42}</Project>
+      <Project>{14134f22-46f1-4076-a1b0-ae84f7618c42}</Project>
       <Name>Pacagroup.Comercial.Creditos.Dominio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Pacagroup.Comercial.Creditos.Fachada\Pacagroup.Comercial.Creditos.Fachada.csproj">
-      <Project>{1a7f2610-fe37-4bd9-ad7a-9b2e01b0675d}</Project>
-      <Name>Pacagroup.Comercial.Creditos.Fachada</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

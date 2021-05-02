@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacagroup.Comercial.Creditos.Dominio", "Pacagroup.Comercial.Creditos.Dominio\Pacagroup.Comercial.Creditos.Dominio.csproj", "{14134F22-46F1-4076-A1B0-AE84F7618C42}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applicacion Layer", "Applicacion Layer", "{2F4DAC0E-66B8-4131-825A-7F89A14FD780}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Layer", "Service Layer", "{2F4DAC0E-66B8-4131-825A-7F89A14FD780}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Layer", "Domain Layer", "{BFBC9C91-E261-4B7A-9EC0-7BEC22DEEEBD}"
 EndProject
@@ -16,6 +16,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacagroup.Comercial.Creditos.Contrato", "Pacagroup.Comercial.Creditos.Contrato\Pacagroup.Comercial.Creditos.Contrato.csproj", "{55B7B7A0-DCA5-40A3-8A4A-79908B321A1F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacagroup.Comercial.Creditos.Implementacion", "Pacagroup.Comercial.Creditos.Implementacion\Pacagroup.Comercial.Creditos.Implementacion.csproj", "{5B557827-6ACB-4987-B049-789774A8360E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacagroup.Comercial.Creditos.Fachada", "Pacagroup.Comercial.Creditos.Fachada\Pacagroup.Comercial.Creditos.Fachada.csproj", "{1A7F2610-FE37-4BD9-AD7A-9B2E01B0675D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacagroup.Comercial.Creditos.ContratoRepositorio", "Pacagroup.Comercial.Creditos.ContratoRepositorio\Pacagroup.Comercial.Creditos.ContratoRepositorio.csproj", "{E3FD4FE2-C483-429E-ADCF-21A1A0F91ED1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacagroup.Comercial.Creditos.SqlRepositorio", "Pacagroup.Comercial.Creditos.SqlRepositorio\Pacagroup.Comercial.Creditos.SqlRepositorio.csproj", "{6891DB62-CA31-4B31-ABD3-D74EC27FBB8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{5B557827-6ACB-4987-B049-789774A8360E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B557827-6ACB-4987-B049-789774A8360E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B557827-6ACB-4987-B049-789774A8360E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7F2610-FE37-4BD9-AD7A-9B2E01B0675D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7F2610-FE37-4BD9-AD7A-9B2E01B0675D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7F2610-FE37-4BD9-AD7A-9B2E01B0675D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7F2610-FE37-4BD9-AD7A-9B2E01B0675D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FD4FE2-C483-429E-ADCF-21A1A0F91ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FD4FE2-C483-429E-ADCF-21A1A0F91ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FD4FE2-C483-429E-ADCF-21A1A0F91ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FD4FE2-C483-429E-ADCF-21A1A0F91ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6891DB62-CA31-4B31-ABD3-D74EC27FBB8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6891DB62-CA31-4B31-ABD3-D74EC27FBB8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6891DB62-CA31-4B31-ABD3-D74EC27FBB8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6891DB62-CA31-4B31-ABD3-D74EC27FBB8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +66,9 @@ Global
 		{F6C525A4-A4B9-4DBF-A01F-7A06E9C3E3BB} = {2F4DAC0E-66B8-4131-825A-7F89A14FD780}
 		{55B7B7A0-DCA5-40A3-8A4A-79908B321A1F} = {2F4DAC0E-66B8-4131-825A-7F89A14FD780}
 		{5B557827-6ACB-4987-B049-789774A8360E} = {2F4DAC0E-66B8-4131-825A-7F89A14FD780}
+		{1A7F2610-FE37-4BD9-AD7A-9B2E01B0675D} = {BFBC9C91-E261-4B7A-9EC0-7BEC22DEEEBD}
+		{E3FD4FE2-C483-429E-ADCF-21A1A0F91ED1} = {BFBC9C91-E261-4B7A-9EC0-7BEC22DEEEBD}
+		{6891DB62-CA31-4B31-ABD3-D74EC27FBB8C} = {ED094F6A-3001-4793-BD72-73D23EAAE7B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CAADE1F4-6B95-46B7-B3F8-E48249076380}
