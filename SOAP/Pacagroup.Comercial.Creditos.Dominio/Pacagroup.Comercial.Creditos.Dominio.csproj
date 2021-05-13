@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Cliente.cs" />
     <Compile Include="Credito.cs" />
+    <Compile Include="Error.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

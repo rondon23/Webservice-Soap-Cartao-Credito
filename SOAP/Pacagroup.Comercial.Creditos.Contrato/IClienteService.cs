@@ -8,6 +8,7 @@ namespace Pacagroup.Comercial.Creditos.Contrato
     public interface IClienteService
     {
         [OperationContract]
+        [FaultContract(typeof(Error))]
         Cliente ObtenerCliente(string numeroDocumento);
         [OperationContract]
         IEnumerable<Cliente> ListarCliente();
