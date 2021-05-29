@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="ClienteRepositorio.cs" />
     <Compile Include="ConexionRepositorio.cs" />
+    <Compile Include="CreditoRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

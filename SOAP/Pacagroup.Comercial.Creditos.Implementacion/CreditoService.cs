@@ -2,9 +2,7 @@
 using Pacagroup.Comercial.Creditos.Dominio;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Pacagroup.Comercial.Creditos.Fachada;
 
 namespace Pacagroup.Comercial.Creditos.Implementacion
 {
@@ -12,22 +10,34 @@ namespace Pacagroup.Comercial.Creditos.Implementacion
     {
         public Credito AtualizarCredito(Credito credito)
         {
-            throw new NotImplementedException();
+            using (var instancia = new CreditoFachada())
+            {
+                return instancia.AtualizarCredito(credito);
+            }
         }
 
         public bool EliminarCredito(int idCredito)
         {
-            throw new NotImplementedException();
+            using (var instancia = new CreditoFachada())
+            {
+                return instancia.EliminarCredito(idCredito);
+            }
         }
 
         public IEnumerable<Credito> ListarCredito()
         {
-            throw new NotImplementedException();
+            using (var instancia = new CreditoFachada())
+            {
+                return instancia.ListarCredito();
+            }
         }
 
         public Credito RegistrarCredito(Credito credito)
         {
-            throw new NotImplementedException();
+            using (var instancia = new CreditoFachada())
+            {
+                return instancia.RegistrarCredito(credito);
+            }
         }
     }
 }
